@@ -22,6 +22,7 @@ requirements:
     - {{ compiler("c") }}
     - {{ ruby }}
   host:
+    - xz
     - zlib
   run:
     - {{ ruby }}
