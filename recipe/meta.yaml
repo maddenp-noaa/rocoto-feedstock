@@ -19,6 +19,7 @@ build:
 requirements:
   build:
     - rsync
+    - sed
     - {{ compiler("c") }}
     - {{ ruby }}
   host:
