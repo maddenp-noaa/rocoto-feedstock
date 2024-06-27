@@ -1,0 +1,10 @@
+diff --git a/INSTALL b/INSTALL
+index ad548dc..affbf28 100755
+--- a/INSTALL
++++ b/INSTALL
+@@ -148 +148 @@ export OBJECT_MODE=64
+-./configure --prefix=${LIB_DIR}/libxml2 CFLAGS="$AIX_CFLAGS" LDFLAGS="$AIX_LDFLAGS" --without-python
++./configure --prefix=${LIB_DIR}/libxml2 --without-python
+@@ -183 +183 @@ cd sqlite-${SQLITE3_VERSION}
+-./configure --prefix=${LIB_DIR}/sqlite3 CFLAGS="-Os -DSQLITE_ENABLE_COLUMN_METADATA -DSQLITE_THREADSAFE=1 $AIX_CFLAGS $AIX_CFLAGS" LD_FLAGS="$AIX_LDFLAGS"
++./configure --prefix=${LIB_DIR}/sqlite3 CFLAGS="-Os -DSQLITE_ENABLE_COLUMN_METADATA -DSQLITE_THREADSAFE=1 $CFLAGS"

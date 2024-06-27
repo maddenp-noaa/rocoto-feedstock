@@ -1,0 +1,26 @@
+{% set ruby = "ruby 3.2.2.*" %}
+
+package:
+  name: rocoto
+  version: 1.3.7
+source:
+  git_depth: 1
+  git_rev: 8abead16afa7cc85ed98a48912a92ee6eec29bfa
+  git_url: https://github.com/NOAA-GSL/rocoto.git
+  patches:
+    - patch
+build:
+  include_recipe: false
+  number: 0
+requirements:
+  build:
+    - rsync
+    - {{ compiler("c") }}
+    - {{ ruby }}
+  host:
+    - zlib
+  run:
+    - {{ ruby }}
+about:
+  home: https://github.com/NOAA-GSL/rocoto
+  license: APACHE
