@@ -11,6 +11,10 @@ source:
     - patch
 build:
   include_recipe: false
+  missing_dso_whitelist:
+    - "*/libruby.so.3.2"
+    - "*/libsqlite3.so.0"
+    - "*/libxml2.so.2"
   number: 0
 requirements:
   build:
